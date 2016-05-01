@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+  <script type="text/javascript" src="timer.js"></script>
+</head>
+<style type="text/css">
+  div {
+    background-color: black;
+  }
+</style>
+<body>
+  <div id="mytimer"></div>
+</body>
+<script type="text/javascript">
+  var timerDiv = document.querySelector('#mytimer');
+  var timer = new Timer({
+    node: timerDiv,
+    width: 300,
+    height: 300,
+    discrete: false,
+    colors: {
+      day: '#0046FF',
+      hour: '#2AFF00',
+      minute: '#2AFF00',
+      second: '#DBFF00'
+    }
+  });
+  timer.start();
+  timer.setValue({
+  });
+  timer.play();
+</script>
+</html>
