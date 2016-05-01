@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Timer</title>
-  <script type="text/javascript" src="timer.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
 </head>
 <style type="text/css">
   div {
@@ -25,9 +25,13 @@
       minute: '#2AFF00',
       second: '#DBFF00'
     }
-  });
+  })
   timer.start();
   timer.setValue({
+    days: 30,
+    hours: 8,
+    minutes: 33,
+    seconds: 45
   });
   timer.play();
 </script>
